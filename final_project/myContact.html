@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Contact</title>
+
+   <link href="css/styles.css" rel="stylesheet" />
+   <link rel="stylesheet" href="css/media.css">
+   <link rel="stylesheet" href="css/forms.css">
+   
+   
+
+</head>
+
+<body>
+   <header>
+
+      <a href="myHome.html"><h1>Marcus' Projects</h1></a>
+      
+      <nav class="horizontal" id="topLinks">
+         
+         <ul>
+            <li><a href="myHome.html">Home</a></li>
+            <li><a href="myCpp.html">C++</a></li>
+            <li><a href="myJava.html">Java</a></li>
+            <li><a href="myMisc.html">Misc</a></li>
+            <li><a href="myContact.html">Contact</a></li>
+         </ul>
+      </nav>
+      
+   </header>
+
+   <section>
+      <article>
+        
+         <h1>Submit Your Feedback</h1>
+
+         <form id="survey" action="" method="post"> 
+         
+            <fieldset id="custInfo"> 
+   
+               <legend>Your Information</legend>
+   
+               <div class="formRow">
+                  <label for="name">Name*</label>
+                  <input name="custName" id="name" type="text" placeholder="first and last name" required/> 
+               </div>
+               
+               <div class="formRow">
+                  <label for="street">Street address</label>
+                  <input name="custStreet" id="street" type="text" /> 
+               </div>
+   
+               <div class="formRow">
+                  <label for="city">City</label>
+                  <input name="custCity" id="city" type="text" value=""/> 
+               </div>
+   
+               <div class="formRow">
+                  <label for="state">State</label>
+                  <input name="custState" id="state" type="text" value=""/> 
+               </div>
+   
+               <div class="formRow">
+                  <label for="zip">Postal code</label>
+                  <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$"/> 
+               </div>
+   
+               <div class="formRow">
+                  <label for="phone">Phone number</label>
+                  <input name="custPhone" id="phone" type="tel"  placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+               </div> 
+   
+               <div class="formRow">
+                  <label for="mail">E-mail*</label>
+                  <input name="custEmail" id="mail" type="email" required /> 
+               </div>
+   
+               
+   
+               <div class="formRow">
+                  <label for="dish">What is the purpose of your inquiry?</label> 
+                  <input name="favDish" id="dish" type="text" list="dishType"/> 
+                     <datalist id="dishType">
+                        <option value="Project feedback / Ideas"> 
+                        <option value="Business Inquiry"> 
+                        <option value="Other"> 
+                     </datalist>
+                  </div> 
+               
+            </fieldset>
+   
+            <fieldset id="expInfo">  
+   
+               <div class="formRow">
+                  <label for="visit">Date of Inquiry</label> 
+                  <input name="visitDate" id="visit" type="date" />
+               </div>
+   
+               <div class="formRow">
+                  <label for="rangeBox">How would you rate the website?</label>
+                  
+                  <input name="serviceRate" id="rangeBox" type="range" value="5" step="1" min="0" max="5" />
+                  
+               </div>
+                  
+               <label for="commBox">Insert your feedback/query here </label>
+               <textarea name="custExp" id="commBox"></textarea> 
+   
+            </fieldset>
+   
+            <div id="buttons">
+               <input type="submit" value="Submit" /> 
+               <input type="reset" value="Cancel" />
+            </div> 
+            
+         </form>
+         
+      </article>
+
+      <aside>
+
+        <h1>My Contacts & Links</h1>
+
+         <p>
+            Here are the links to my Github, YouTube, and Email.     
+         </p>
+
+         
+         
+       <p>
+         <img class="logo" src="images/github.png" alt="github" >
+        <a href="https://github.com/Marcvs99">GitHub</a> 
+        
+        </p>
+
+        <p>
+         <img class="logo" src="images/youtube.png" alt="youtube" >
+         <a href="https://www.youtube.com/channel/UCFKMJ-9xqBdYS017sQshLPg">YouTube</a>
+        </p>
+
+        <p>
+         <img class="logo" src="images/gmail.png" alt="gmail" >
+          <a href = "mailto: marcvs99@gmail.com">Email: marcvs99@gmail.com</a>
+        </p>
+
+        <img src="images/click.png" alt="links" >
+        
+         
+      </aside>
+
+   </section>
+
+</body>
+
+</html>

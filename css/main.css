@@ -1,0 +1,25 @@
+/*
+ 
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gurajada&display=swap');
+
+body {
+  padding-top: 56px;
+  font-family: 'Gurajada', sans-serif; 
+  opacity:0.8; 
+}
+.googleFont2{
+  font-family:'Lato', sans-serif ; 
+  opacity:0.8;
+}
+.logo{margin-top:1%;}
+h3{ font-size: 1.45em; padding:0;}
+
+.img-left{margin-right:9px;  }
+.textLargeSize{font-size:1.35em;}
+.rmborder{border:0;}
+
+.assignmentsLinks{ padding:10px 0 0 10px;   opacity:0.8; }
+a.anchorColor{color:#880000;}

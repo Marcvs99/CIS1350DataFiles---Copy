@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* HTML and Body styles */
+
+html 
+{
+   background: rgb(8, 1, 24);
+   font-family: "Palatino Linotype", "Times New Roman", serif;
+   color: rgb(101, 101, 101);
+   
+}
+
+body 
+{
+   box-shadow: rgb(51, 51, 51) 10px 0px 30px,
+               rgb(51, 51, 51) -10px 0px 30px;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;    
+   margin: 0px auto;
+   
+   max-width: 1100px;  
+   width: 100%;
+}
+
+/* Header Styles */
+
+header 
+{  
+   border-bottom: 1px solid rgb(0, 0, 0);
+   color: white;
+}
+
+header h1 
+{
+   font-family: "Palatino Linotype", "Times New Roman", serif;
+   font-size: 1.15em;
+   font-weight: normal;
+   text-align: center;
+   padding: 5px 0px;
+   color: antiquewhite;
+   text-decoration: none;
+   text-shadow: rgb(50, 50, 50) 0px 0px 5px;
+}
+
+/* Header Navigation List Styles */
+
+header > nav 
+{
+   float: left;
+   align-items: center;
+}
+   
+header > nav ul 
+{
+   display: none;
+   margin-bottom: 20px;
+}
+   
+header > nav ul li 
+{
+   font-size: 0.9em;
+   font-family:"Palatino Linotype", "Times New Roman", serif;
+   line-height: 1.3em;
+   height: 1.3em;
+   margin-left: 25px;
+   
+}
+
+header > nav ul li a 
+{
+   color: rgb(177, 182, 156);
+   text-decoration: none;
+}
+ 
+header > nav ul li a:hover 
+{
+   color: rgb(128, 35, 35);
+   text-shadow: black 0px 0px 2px, black 0px 0px 5px, black 0px 0px 20px;
+}
+
+
+/* Section Styles */
+
+body > section 
+{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;  
+   min-width: 100%;
+}
+
+
+
+/* Article Styles */
+
+article 
+{ 
+   background: rgb(224, 223, 208);  
+   -webkit-flex: 1 1 500px;
+   flex: 1 1 500px; 
+   border-bottom: 1px solid black;
+   color: black;
+   
+}
+
+article h1 
+{
+   background: rgba(80,102,91,0.32);   
+   font-size: 1.5em;
+   text-align: center;
+   padding: 10px 0px;
+}
+
+article p 
+{
+   margin: 25px 20px;
+   
+}
+
+article img
+{
+   display: block;
+   float: right;
+   max-width: 90%;
+   margin: 10px 20px;
+   
+}
+
+/* Aside Styles */
+
+aside 
+{
+   background: rgb(150, 192, 169);
+   -webkit-flex: 1 1 350px;
+   flex: 1 1 350px;
+   border-bottom: 1px solid black; 
+   border-left: 2px solid black;   
+   color: black; 
+       
+}
+
+aside h1 
+{
+   background: rgba(80,102,91,0.32);   
+   font-size: 1.5em;
+   text-align: center;
+   padding: 10px 0px;
+}
+
+aside p 
+{
+   margin: 40px 20px;
+}
+
+aside img
+{
+   display: block;
+    max-width: 80%;
+    margin: 5px auto;
+    max-width: 400px;
+    min-width: 30%;
+}
+
+aside img.logo
+{
+   display: block;
+   float:left;
+   max-width: 40px;
+   min-width: 10px;
+   margin: 0px 5px;
+}
+
+aside a
+{
+   text-decoration: underline;
+   color:darkred;
+}
+
+
+@media only screen and (max-width: 520px) 
+{
+
+   header > nav 
+   {
+      float:left;
+      
+   }
+   
+   header > nav ul 
+   {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: column;
+      flex-flow: column;
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      margin: 5px 5px;
+   }
+   
+   header > nav ul li 
+   {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+      font-size: 0.95em;
+      display: block;
+   }   
+   
+   header > h1 
+   {
+      font-size: 2em;
+      margin: 10px 0px 10px 0px;
+   }
+   
+}
+
+@media only screen and (min-width: 521px) 
+{
+
+   header > nav 
+   {
+      float: none;
+   }
+   
+   header > nav ul 
+   {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      margin: 5px 10px 0px 0px;
+   }
+   
+   header > nav ul li 
+   {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+      font-size: 0.95em;
+   }   
+   
+   header h1 
+   {
+      font-size: 2em;
+      text-decoration: none;
+      margin: 10px 0px 10px 0px;
+   }
+ 
+}
+
+@media print 
+{
+   header
+   {
+      display: none;
+   }
+
+   iframe#video
+   {
+      display: none;
+   }
+
+   a
+   {
+      text-decoration: none;
+   }
+
+   html 
+   {
+      background: white;
+      font-family: serif;
+      color: black;
+   }
+   
+   body 
+   {
+      box-shadow: none;
+   }
+
+   article 
+   { 
+   background: none;  
+   -webkit-flex: 1 1 500px;
+   flex: 1 1 500px; 
+   border-bottom: none;
+   }
+
+   article h1 
+   {
+      background: none;   
+      font-size: 1.5em;
+      text-align: center;
+      padding: 10px 0px;
+   }
+
+   aside 
+   {
+      background: none;
+      -webkit-flex: 1 1 350px;
+      flex: 1 1 350px;
+      border-bottom: none; 
+      border-left: none;        
+   }
+
+   aside h1 
+   {
+      background: none;   
+      font-size: 1.5em;
+      text-align: center;
+      padding: 10px 0px;
+   }
+
+}
+

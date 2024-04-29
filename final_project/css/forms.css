@@ -1,0 +1,52 @@
+/* Form Layout Styles */
+
+form
+{
+    margin: 10px 20px;
+}
+
+label 
+{
+    display: block;
+    float: left;
+    clear: left;
+    margin: 5px;
+    width: 200px;
+ }
+ 
+ input, select, textarea 
+ {
+    display: block;
+    float: left;
+    margin: 5px 0px;
+    width: 200px;
+ }
+ 
+ textarea 
+ {
+    height: 100px;
+ }
+ 
+ form p 
+ {
+    clear: left;
+    text-align: center;
+    padding-top: 40px;
+ }
+ 
+
+ /* Form Button Styles */
+
+div#buttons 
+{
+   text-align: center; 
+   width: 100%;
+}
+
+input[type='submit'], input[type='reset'] 
+{ 
+   font-size: 1.2em; 
+   padding: 5px; 
+   margin: 15px;
+} 
+
